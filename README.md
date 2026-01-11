@@ -50,8 +50,8 @@
 
    4. Start the Server:
    1     python3 customer-support-ai/main.py
-      The server will be accessible at http://127.0.0.1:8000.
+      The server will be accessible at http://127.0.0.1:8001.
 
    5. Test the API:
-      You can use the interactive API documentation at http://127.0.0.1:8000/docs to send requests to the
+      You can use the interactive API documentation at http://127.0.0.1:8001/docs to send requests to the
   /api/v1/chat/web endpoint.
