@@ -8,7 +8,7 @@ from langchain_core.messages import get_buffer_string
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough
-from langchain_openai import ChatOpenAI
+from langchain_community.chat_models import ChatOllama
 
 from core.config import settings
 from rag.prompts import RAG_USER_PROMPT_TEMPLATE, RAG_SYSTEM_PROMPT
@@ -48,11 +48,9 @@ class RAGChain:
     def _get_llm(self):
         """
         Get the language model.
-        
-        NOTE: This is a placeholder. You can replace ChatOpenAI with any other
-        LangChain-compatible chat model.
         """
-        return ChatOpenAI(api_key=settings.LLM_API_KEY, model="gpt-3.5-turbo")
+        logger.info("Loading local Ollama model: qwen3-vl:2b")
+        return ChatOllama(model="qwen3-vl:2b")
 
     def _create_chain(self):
         """

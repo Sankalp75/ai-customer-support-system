@@ -4,7 +4,8 @@ from fastapi import FastAPI
 
 from api.routers import chat_web, chat_whatsapp
 from core.config import settings
-from storage.database import engine, Base
+from storage.database import engine
+from storage.models import Base
 
 # Create all tables in the database
 Base.metadata.create_all(bind=engine)
@@ -27,4 +28,4 @@ def health_check():
     return {"status": "ok"}
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)
