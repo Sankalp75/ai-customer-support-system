@@ -1,4 +1,4 @@
-  mhProject: AI-Powered Customer Support Automation System
+  Project: AI-Powered Customer Support Automation System
 
   Overview:
   A modular and scalable AI chatbot system designed to provide automated, knowledge-based customer support for
