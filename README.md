@@ -55,3 +55,10 @@
    5. Test the API:
       You can use the interactive API documentation at http://127.0.0.1:8001/docs to send requests to the
   /api/v1/chat/web endpoint.
+
+
+
+
+https://github.com/user-attachments/assets/eb67b0b0-9903-44d4-a5d5-08dee0c38676
+
+
